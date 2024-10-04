@@ -7,7 +7,7 @@ import React from 'react'
 import { useGLTF, PerspectiveCamera } from '@react-three/drei'
 
 export function Model(props) {
-  const { nodes, materials } = useGLTF('/model.gltf')
+  const { nodes, materials } = useGLTF('./model.gltf')
   return (
     <group {...props} dispose={null}>
       <PerspectiveCamera makeDefault={false} far={100} near={0.1} fov={39.598} position={[10.245, 1.332, 6.738]} rotation={[0.078, 0.991, -0.049]} />
